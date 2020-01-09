@@ -1,0 +1,22 @@
+/*.title_bar {
+    -fx-background-color: #707070, linear-gradient(#fefefe, #fcfcfc), linear-gradient(#f0f0f0 0%, #ebebeb 49%, #ebebeb 40%, #dfdfdf 100%);
+    /*-fx-background-insets: 0,1,2;*/
+    /*-fx-border-width: 1 0 0 0;
+    -fx-border-color: #bfbfbf;
+}*/
+
+.search_bar {
+    -fx-min-height: 15px;
+    -fx-background-color: #ffffff;
+    -fx-border-style: solid outside;
+    -fx-border-radius: 3;
+    -fx-border-width: 1px;
+    -fx-border-color: #fdfdfd;
+    -fx-prompt-text-fill: #a7a7a7;
+    -fx-alignment: center;
+}
+
+.anchor_pane {
+    -fx-border-width: 1px;
+    -fx-border-color: #bfbfbf;
+}

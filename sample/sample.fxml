@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#titleBarOnMouseDrag" onMousePressed="#titleBarOnMouseClick" prefHeight="650.0" prefWidth="1200.0" styleClass="anchor_pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <HBox alignment="BASELINE_CENTER" onKeyPressed="#searchTxtFieldKeyEvent" prefHeight="33.0" prefWidth="1200.0" styleClass="title_bar" stylesheets="@style.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <TextField fx:id="addSearchBar" accessibleRole="BUTTON" cacheShape="false" centerShape="false" maxWidth="700.0" minWidth="700.0" nodeOrientation="LEFT_TO_RIGHT" onKeyPressed="#searchTxtFieldKeyEvent" pickOnBounds="false" prefHeight="19.0" prefWidth="700.0" promptText="Search or enter an address" scaleShape="false" styleClass="search_bar" stylesheets="@style.css">
+                    <HBox.margin>
+                        <Insets top="7.0" />
+                    </HBox.margin>
+                </TextField>
+            </children>
+        </HBox>
+      <AnchorPane layoutX="4.0" layoutY="1.0" prefHeight="27.0" prefWidth="70.0">
+         <children>
+                <FontAwesomeIcon fill="#18ef39" iconName="CIRCLE" layoutX="45.0" layoutY="21.0" onMouseClicked="#minimizeBtnEvent" size="1.1em" wrappingWidth="15.285714149475098" />
+                <FontAwesomeIcon fill="#fc595c" iconName="CIRCLE" layoutX="6.0" layoutY="21.0" onMouseClicked="#closeBtnEvent" size="1.1em" wrappingWidth="15.285714149475098" />
+                <FontAwesomeIcon fill="#ffc137" iconName="CIRCLE" layoutX="25.0" layoutY="21.0" onMouseClicked="#maximizeBtnEvent" size="1.1em" wrappingWidth="15.285714149475098" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="892.0" layoutY="83.0" prefHeight="19.0" prefWidth="22.0" />
+          <FontAwesomeIcon fill="#9e9c9c" iconName="REPEAT" layoutX="936.0" layoutY="22.0" onMouseClicked="#refreshBtnEvent" text="" />
+      <WebView fx:id="webView" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="33.0" />
+    </children>
+</AnchorPane>
